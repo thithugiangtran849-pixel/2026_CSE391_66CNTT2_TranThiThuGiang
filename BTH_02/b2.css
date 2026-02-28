@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #2d0033;
+    color: yellow;
+}
+
+nav a {
+    color: yellow;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    background: url(ocean.jpg) no-repeat center center/cover;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.overlay button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: yellow;
+    border: none;
+    cursor: pointer;
+}
+
+/* MAIN */
+main {
+    background: #d6f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card {
+    width: 250px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    text-align: center;
+    padding: 20px;
+}
+
+footer i {
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+footer i:hover {
+    color: yellow;
+}

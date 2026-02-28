@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #fafafa;
+}
+
+.container {
+    width: 78%;
+    margin: 70px auto;
+    border: 2px solid #9bd3f5;
+    padding: 60px 70px;
+}
+
+/* TITLE */
+.main-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    color: #2d2d2d;
+    line-height: 1.7;
+    letter-spacing: 1px;   /* QUAN TRỌNG */
+    margin-bottom: 60px;
+}
+
+/* LAYOUT */
+.content {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* CARD */
+.card {
+    width: 30%;
+    background: #fff;
+    padding: 35px 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #3a3a3a;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+}
+
+.card p {
+    font-size: 13px;
+    font-weight: 300;
+    color: #8a8a8a;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+.author strong {
+    font-size: 13px;
+    font-weight: 500;
+    color: #2d2d2d;
+}
+
+.author span {
+    display: block;
+    font-size: 12px;
+    color: #5aa9ff;
+    margin-top: 4px;
+}
+
+/* RIGHT */
+.text {
+    width: 70%;
+}
+
+.text p {
+    font-size: 13.5px;
+    font-weight: 300;
+    color: #8a8a8a;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.text .bold {
+    font-weight: 500;
+    color: #2d2d2d;
+}
