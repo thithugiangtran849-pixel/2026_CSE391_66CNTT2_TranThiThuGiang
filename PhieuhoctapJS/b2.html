@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM Manipulation Practice</title>
+</head>
+
+<body>
+
+<h1 id="title">Tiêu đề ban đầu</h1>
+
+<div id="content"></div>
+
+<ul id="list">
+    <li>Mục 1</li>
+    <li>Mục 2</li>
+</ul>
+
+<script>
+
+    // 1. Thay đổi văn bản tiêu đề bằng textContent
+    const title = document.getElementById("title");
+    title.textContent = "Tiêu đề đã được thay đổi bằng JavaScript";
+
+    // 2. Chèn thêm HTML vào div bằng innerHTML
+    const contentDiv = document.getElementById("content");
+    contentDiv.innerHTML = "<p>Đây là đoạn văn được thêm bằng innerHTML</p>";
+
+    // 3. Tạo một thẻ <li> mới
+    const newItem = document.createElement("li");
+    newItem.textContent = "Mục 3 (được tạo bằng createElement)";
+
+    // 4. Thêm phần tử vào danh sách <ul>
+    const list = document.getElementById("list");
+    list.appendChild(newItem);
+
+    // 5. Xóa một phần tử bằng remove()
+    const firstItem = list.querySelector("li");
+    firstItem.remove();
+
+</script>
+
+</body>
+</html>

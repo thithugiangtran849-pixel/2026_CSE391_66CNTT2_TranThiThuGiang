@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selecting Elements Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <h1 id="title">JavaScript DOM Practice</h1>
+
+    <p class="text">Đây là đoạn văn thứ nhất</p>
+    <p class="text">Đây là đoạn văn thứ hai</p>
+    <p class="text">Đây là đoạn văn thứ ba</p>
+
+    <button id="btn">Click me</button>
+
+    <script>
+
+        // 1. Sử dụng querySelector để chọn một phần tử
+        const firstParagraph = document.querySelector(".text");
+        console.log("querySelector:", firstParagraph);
+
+        // 2. Sử dụng querySelectorAll để lấy danh sách các phần tử
+        const allParagraphs = document.querySelectorAll(".text");
+        console.log("querySelectorAll:", allParagraphs);
+
+        // 3. Sử dụng getElementById để truy cập trực tiếp qua ID
+        const titleElement = document.getElementById("title");
+        console.log("getElementById:", titleElement);
+
+        // ví dụ thêm: lấy button
+        const button = document.getElementById("btn");
+        console.log("Button:", button);
+
+    </script>
+
+</body>
+</html>

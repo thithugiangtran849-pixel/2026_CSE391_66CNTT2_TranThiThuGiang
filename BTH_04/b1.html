@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="b1.css">
+<title>Bảng điểm</title>
+</head>
+<body>
+<h2>Bảng điểm</h2>
+<input id="name" type="text" placeholder="Họ tên">
+<input id="score" type="number" placeholder="Điểm (0-10)" step="0.1" min ="0" max="10">
+<button id="addBtn">Thêm</button>
+<table >
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Họ tên</th>
+            <th>Điểm</th>
+            <th>Xếp loại</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+<tbody id= "tableBody">
+</tbody>
+</table>
+<div id ="thongke">
+    Tổng sinh viên: <span id="total">0</span> |
+    Điểm trung bình: <span id="average">0</span> |
+</div>
+<script src="script.js"></script>
+</body>
+</html>

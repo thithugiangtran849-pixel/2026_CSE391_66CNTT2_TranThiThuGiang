@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Đăng ký</title>
+	    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+	    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" type="text/javascript"></script>
+	    <script src="demoValidation.js" type="text/javascript"></script>
+	    <style>
+		label.error{
+			color: red;
+		}
+	    </style>
+	</head>
+	<body>
+    <h1>Đăng ký</h1>
+
+<form id="registerForm">
+
+<div>
+<label for="fullname">Họ và tên</label><br>
+<input type="text" name="fullname" id="fullname">
+</div>
+
+<div>
+<label for="email">Email</label><br>
+<input type="text" name="email" id="email">
+</div>
+
+<div>
+<label for="phone">Số điện thoại</label><br>
+<input type="text" name="phone" id="phone">
+</div>
+
+<div>
+<label for="password">Mật khẩu</label><br>
+<input type="password" name="password" id="password">
+</div>
+
+<div>
+<label for="confirmPassword">Xác nhận mật khẩu</label><br>
+<input type="password" name="confirmPassword" id="confirmPassword">
+</div>
+
+<div>
+<label for="gender">Giới tính</label><br>
+
+<input type="radio" name="gender" value="Nam" id="male">
+<label for="male">Nam</label>
+<input type="radio" name="gender" value="Nữ" id="female">
+<label for="female">Nữ</label>
+
+</div>
+
+<div>
+<input type="checkbox" name="terms" id="terms">
+<label for="terms"> Đồng ý điều khoản</label>
+</div>
+
+<button type="submit">Đăng ký</button>
+
+</form>
+
+<div id="success"></div>
+
+<script src="2a.js"></script>
+
+</body>
+</html>

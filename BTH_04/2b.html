@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Đặt hàng</title>
+	    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+	    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" type="text/javascript"></script>
+	    <script src="demoValidation.js" type="text/javascript"></script>
+	    <style>
+		label.error{
+			color: red;
+		}
+        .hidden{
+            display: none;
+        
+        }
+        .error{
+            color:red;
+            font-size: 14px;
+        }
+	    </style>
+	</head>
+	<body>
+    <h1>Đặt hàng </h1>
+    <form id="orderForm">
+
+<label for="product">Tên sản phẩm</label>
+<select name="product" id="product">
+<option value="">-- Chọn sản phẩm --</option>
+<option value="ao">Áo</option>
+<option value="quan">Quần</option>
+<option value="giay">Giày</option>
+</select>
+
+<br><br>
+
+<label for="quantity">Số lượng</label>
+<input type="number" name="quantity" id="quantity">
+
+<br><br>
+
+<label for="date">Ngày giao hàng</label>
+<input type="date" id="date" name="date">
+
+<br><br>
+
+<label for="address">Địa chỉ giao</label>
+<input type="text" name="address" id="address">
+
+<br><br>
+
+<label for="note">Ghi chú</label>
+<textarea name="note" id="note"></textarea>
+<div id="counter">0/200</div>
+
+<br>
+<label for ="payment">Phương thức thanh toán</label><br>
+
+<label><input type="radio" name="payment" value="cod"> COD</label>
+<label><input type="radio" name="payment" value="bank"> Chuyển khoản</label>
+<label><input type="radio" name="payment" value="wallet"> Ví điện tử</label>
+
+<br><br>
+
+<div>Tổng tiền: <span id="total">0</span> đ</div>
+
+<br>
+
+<button type="submit">Đặt hàng</button>
+
+</form>
+
+<div id="confirmBox" class="hiden">
+<h3>Xác nhận đơn hàng</h3>
+<div id="summary"></div>
+<button id="confirmBtn">Xác nhận</button>
+<button id="cancelBtn">Hủy</button>
+</div>
+<script src="2b.js"></script>
+    </body>
+</html>

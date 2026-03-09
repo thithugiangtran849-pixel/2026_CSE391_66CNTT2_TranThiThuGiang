@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attributes and Classes Practice</title>
+
+<style>
+    .highlight {
+        color: red;
+        font-weight: bold;
+    }
+
+    .active {
+        background-color: yellow;
+    }
+</style>
+
+</head>
+<body>
+
+<h2 id="title">Ví dụ thao tác Class</h2>
+
+<img id="image" src="https://via.placeholder.com/150" alt="sample image">
+
+<button id="changeImg">Đổi ảnh</button>
+<button id="addClass">Thêm class</button>
+<button id="removeClass">Xóa class</button>
+<button id="toggleClass">Toggle class</button>
+<button id="checkClass">Kiểm tra class</button>
+
+<script>
+
+const img = document.getElementById("image");
+const title = document.getElementById("title");
+
+// 1. Thay đổi thuộc tính src của img
+document.getElementById("changeImg").onclick = function(){
+    img.src = "https://via.placeholder.com/200";
+};
+
+// 2 + 3. Thêm class bằng classList.add
+document.getElementById("addClass").onclick = function(){
+    title.classList.add("highlight");
+};
+
+// 3. Xóa class bằng classList.remove
+document.getElementById("removeClass").onclick = function(){
+    title.classList.remove("highlight");
+};
+
+// 4. Toggle class
+document.getElementById("toggleClass").onclick = function(){
+    title.classList.toggle("active");
+};
+
+// 5. Kiểm tra class
+document.getElementById("checkClass").onclick = function(){
+    if(title.classList.contains("highlight")){
+        console.log("Phần tử có class highlight");
+    } else {
+        console.log("Phần tử KHÔNG có class highlight");
+    }
+};
+
+</script>
+
+</body>
+</html>
